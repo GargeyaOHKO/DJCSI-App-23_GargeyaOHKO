@@ -1,0 +1,10 @@
+^C:\USERS\PARAB\ONEDRIVE\DOCUMENTS\CSI\TO_DO\APP\BUILD\WINDOWS\CMAKEFILES\AB30A99208D51E8F188BEBCB6B7C1EBA\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/parab/OneDrive/Documents/CSI/To_Do/app/windows -BC:/Users/parab/OneDrive/Documents/CSI/To_Do/app/build/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/parab/OneDrive/Documents/CSI/To_Do/app/build/windows/app.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
